@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pet Aquamation &amp; Memorial Services | Paw Passage Memorial Services</title>
+<meta name="description" content="Gentle pet aquamation (water cremation) and memorial services. A caring cremation alternative for dogs, cats and other companions in San Jose City, Nueva Ecija.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f4c5c;--tide:#00809d;--glass:#d2f1f9;--foam:#eefaff;--lantern:#63c3db;--white:#fff}
+*{box-sizing:border-box;margin:0}
+body{font:400 1.1rem/1.75 Figtree,system-ui,sans-serif;color:var(--ink);background:var(--foam)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:400;line-height:1.2}
+h1{font-size:clamp(2.2rem,6vw,3.8rem)}h2{font-size:clamp(1.6rem,3.5vw,2.3rem);margin:3rem 0 .8rem}h3{font-size:1.25rem;font-weight:600;margin-bottom:.3rem}
+p{max-width:64ch;margin-bottom:.8rem}a{color:inherit}
+:focus-visible{outline:3px solid var(--lantern);outline-offset:3px}
+header{position:sticky;top:0;z-index:9;background:rgba(210,241,249,.97);border-bottom:1px solid var(--glass)}
+.bar{max-width:1100px;margin:auto;padding:.7rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.logo{font:600 1.25rem Fraunces,serif;text-decoration:none}
+#mb{display:none;font:inherit;font-weight:600;padding:.6rem 1.1rem;border-radius:99px;border:1.5px solid var(--ink);background:none;color:var(--ink)}
+nav{display:flex;gap:.2rem;flex-wrap:wrap}
+nav a{text-decoration:none;padding:.45rem .8rem;border-radius:99px;font-weight:500;font-size:.95rem}
+nav a:hover{background:var(--glass)}nav a[aria-current=page]{background:var(--ink);color:var(--white)}
+@media(max-width:860px){#mb{display:block}nav{display:none;width:100%;flex-direction:column}nav.open{display:flex}nav a{font-size:1.1rem;padding:.7rem 1rem}}
+main{max-width:1100px;margin:auto;padding:0 1.25rem}
+.page{display:none;padding-bottom:4rem}.page.on{display:block}
+.btn{display:inline-block;background:var(--tide);color:var(--white);padding:1rem 1.8rem;border-radius:99px;text-decoration:none;font-weight:600;border:0;font-size:1.05rem;cursor:pointer;font-family:inherit;min-height:48px}
+.btn:hover{background:var(--ink)}.btn.alt{background:none;color:var(--ink);border:2px solid var(--ink)}.btn.alt:hover{background:var(--glass)}
+.btn.big{font-size:1.25rem;padding:1.2rem 2.4rem}
+.row{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.5rem 0}
+.hero{padding:4rem 0 3rem}.hero p{font-size:1.25rem;margin-top:1.2rem}
+.band{background:var(--glass);margin:3rem -1.25rem 0;padding:1.5rem 1.25rem 3rem;border-radius:28px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:1.2rem}
+.cols p{font-size:1rem}
+.card{background:var(--white);border-radius:20px;padding:1.6rem;border:1px solid var(--glass)}
+.pagehead{padding:3.5rem 0 .5rem}.pagehead p{font-size:1.2rem;margin-top:1rem}
+.steps{list-style:none;padding:0;counter-reset:s;display:grid;gap:1.3rem;max-width:700px;margin-top:1.2rem}
+.steps li{counter-increment:s;padding-left:3.4rem;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--tide);color:var(--white);display:grid;place-items:center;font-family:Fraunces,serif}
+.ph{background:#fff3d6;border:1px dashed #c98f2a;border-radius:6px;padding:0 .35em;font-size:.95em}
+.imgph{background:var(--glass);border-radius:18px;min-height:190px;display:grid;place-items:center;text-align:center;padding:1rem;font-size:.95rem;color:var(--tide)}
+.note{background:var(--white);border-left:4px solid var(--lantern);padding:1rem 1.3rem;border-radius:0 12px 12px 0;margin:1.5rem 0;max-width:64ch;font-size:1rem}
+.quote{font:1.4rem/1.4 Fraunces,serif;max-width:32ch}
+table{border-collapse:collapse;width:100%;background:var(--white);border-radius:14px;overflow:hidden;font-size:1rem}
+th,td{text-align:left;padding:.9rem 1rem;border-bottom:1px solid var(--glass);vertical-align:top}th{background:var(--ink);color:var(--white)}
+.scroll{overflow-x:auto}
+details{background:var(--white);border:1px solid var(--glass);border-radius:14px;padding:.9rem 1.2rem;margin-top:.7rem;max-width:760px}
+summary{cursor:pointer;font-weight:600}details p{margin-top:.6rem}
+.cand{width:34px;height:52px;display:block;margin:0 auto .5rem}
+form{display:grid;gap:1rem;margin-top:1rem}label{font-weight:600;display:grid;gap:.35rem}
+input,select,textarea{font:inherit;padding:.8rem .9rem;border:1.5px solid #8cc9d8;border-radius:12px;background:var(--white);color:var(--ink)}
+textarea{min-height:120px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2rem}@media(max-width:760px){.split{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#dce9e6;padding:2.5rem 1.25rem;font-size:.97rem}
+.fi{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem}
+footer a{display:block;padding:.2rem 0}footer p{font-size:.95rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.pi{width:100%;max-width:760px;height:auto;border-radius:22px;display:block;margin-top:2rem}figure{margin:0}figure img{width:100%;height:auto;border-radius:18px;display:block}figcaption{font-size:.98rem;margin-top:.5rem}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem;margin-top:.8rem}.tag{font:italic 1.5rem Fraunces,serif;color:var(--tide)}
+</style>
+</head>
+<body>
+<header><div class="bar"><a class="logo" href="#home"><img src="images/logo.png" alt="Paw Passage Memorial Services - Pet Aquamation" width="145" height="52" style="display:block;height:52px;width:auto;mix-blend-mode:multiply"></a>
+<button id="mb" aria-expanded="false" aria-controls="nv">Menu</button>
+<nav id="nv" aria-label="Main"></nav></div></header>
+
+<main>
+<section class="page" id="home">
+<div class="hero"><h1>A gentle, water-based farewell for the pet you love.</h1>
+<p>There is a gentler way to honor your beloved pet. Aquamation is a water-based alternative to traditional cremation, using a gentle process that is environmentally conscious and respectful.</p><p>Compassionate pet aftercare in San Jose City, Nueva Ecija.</p><div class="row cta"></div><img class="pi" src="images/viewing.jpg" width="900" height="610" alt="A sleeping puppy resting on a soft bed surrounded by flowers and candles" fetchpriority="high"></div>
+<div class="band"><h2>What is aquamation?</h2><p>Aquamation, also known as water cremation or alkaline hydrolysis, is a gentle and environmentally friendly aftercare process. Using warm water and a specialized alkaline solution, the natural process of decomposition is accelerated in a controlled environment. This process leaves only the pet's mineral remains, which are carefully dried, processed, and returned to the family.</p><p>Unlike flame cremation, aquamation uses no direct fire and is considered a gentler alternative.</p><a class="btn alt" href="#aquamation">Read more about aquamation</a></div>
+<h2>Our simple process</h2>
+<ol class="steps">
+<li><h3>Contact us</h3><p>Reach out to us by phone, email, or online. We'll answer your questions and help you understand the available options.</p></li>
+<li><h3>Arrange your pet's care</h3><p>Choose the package that feels right for you and, with different inclusions to honor your pet in a meaningful way.</p></li>
+<li><h3>Drop-off or pick-up</h3><p>Bring your pet to our facility or arrange for pick-up. If needed, you can finalize your service package at this time and complete payment or any required deposit. From here, your pet remains in our care.</p></li>
+<li><h3>Your chosen service</h3><div class="two"><figure><img src="images/groom.jpg" width="800" height="600" loading="lazy" alt="A puppy being gently groomed"><figcaption><strong>Aquamation with Memorial Viewing:</strong> your pet will be lovingly groomed and thoughtfully prepared for a peaceful viewing and final goodbye.</figcaption></figure><figure><img src="images/only.jpg" width="800" height="600" loading="lazy" alt="Gloved hands gently placing a puppy"><figcaption><strong>Aquamation Only:</strong> your pet will be gently cared for and respectfully placed into the aquamation machine.</figcaption></figure></div></li>
+<li><h3>Aquamation process</h3><figure style="max-width:520px"><img src="images/machine.jpg" width="800" height="600" loading="lazy" alt="A puppy resting in the aquamation chamber with gently flowing warm water"><figcaption>Your pet is gently cared for in the aquamation machine, where warm water, gentle heat, and a natural process respectfully return them to their natural elements.</figcaption></figure></li>
+<li><h3>Return of ashes and package inclusions</h3><figure style="max-width:520px"><img src="images/package.jpg" width="900" height="610" loading="lazy" alt="A memorial display with a photo frame, certificate of aquamation, pouch and keepsake jars"><figcaption>Once the aquamation process is complete, we carefully prepare the ashes and other included items according to your chosen package. These are then returned to you. <span class="ph">[Confirm which items come with each package]</span></figcaption></figure></li>
+</ol>
+<h2>Why choose aquamation?</h2>
+<div class="cols"><div class="card"><h3>Gentle &amp; respectful</h3><p>A peaceful, water-based farewell without direct flame.</p></div><div class="card"><h3>Eco-friendly</h3><p>Uses less energy and has a lower environmental impact than traditional flame cremation.</p></div><div class="card"><h3>More mineral remains returned</h3><p>Families typically receive more of their pet's mineral remains for memorialization.</p></div><div class="card"><h3>Natural process</h3><p>Aquamation gently replicates the natural cycle of decomposition in a controlled environment.</p></div></div>
+<h2>Our services</h2>
+<div class="cols"><div class="card"><h3>Aquamation with Memorial Viewing</h3><p>Your pet is lovingly groomed and thoughtfully prepared for a peaceful viewing and final goodbye.</p></div><div class="card"><h3>Aquamation Only</h3><p>Your pet is gently cared for and respectfully placed into the aquamation machine.</p></div><div class="card"><h3>Drop-off or pick-up</h3><p>Bring your pet to our facility or arrange for pick-up. <span class="ph">[Add pick-up areas and fees]</span></p></div></div>
+<p style="margin-top:1rem"><a href="#pricing">See pricing</a></p>
+<h2>Memorial keepsakes</h2><p>Urns, paw prints, fur keepsakes, jewelry and photo memorials. Choose what feels right for your family.</p>
+<div class="cols"><div class="imgph">[Photo: urn]</div><div class="imgph">[Photo: paw print]</div><div class="imgph">[Photo: keepsake]</div></div><p style="margin-top:1rem"><a href="#memorials">See memorial options</a></p>
+<h2>Kind words from families</h2>
+<div class="cols"><div class="card"><p class="quote" style="font-size:1.2rem"><span class="ph">[Real testimonial]</span></p><p><span class="ph">[Name, pet's name]</span></p></div><div class="card"><p class="quote" style="font-size:1.2rem"><span class="ph">[Real testimonial]</span></p><p><span class="ph">[Name, pet's name]</span></p></div></div>
+<h2>Where we serve</h2><p><span class="ph">[Cities / areas you serve]</span> Not sure if we cover your area? <a href="#contact">Ask us</a>.</p>
+<h2>Common questions</h2><div class="faqprev"></div><p style="margin-top:1rem"><a href="#faq">See all questions</a></p>
+<div class="band" style="text-align:center"><h2 style="margin-top:1.5rem">Have more questions about aquamation or pet aftercare?</h2><p style="margin:auto auto 1rem">Whether you're planning ahead or need immediate aftercare for your beloved pet, Paw Passage is here to help. We're here to answer your questions, explain your options, and assist you every step of the way.</p><p class="tag" style="margin:0 auto 1rem">We're here every step of the way.</p><div class="row cta" style="justify-content:center"></div></div>
+</section>
+
+<section class="page" id="aquamation">
+<div class="pagehead"><h1>Pet aquamation</h1><p>A quiet, water-based way to say goodbye to a dog, cat or other companion.</p></div>
+<h2>What it is</h2><p>Aquamation, also known as water cremation or alkaline hydrolysis, is a gentle and environmentally friendly aftercare process. Using warm water and a specialized alkaline solution, the natural process of decomposition is accelerated in a controlled environment. Only the pet's mineral remains are left, and these are carefully dried, processed, and returned to the family.</p>
+<h2>How it works, step by step</h2>
+<ol class="steps">
+<li><h3>When your pet arrives</h3><p>You can bring your pet to our facility or arrange pick-up. From that point your pet remains in our care. <span class="ph">[Describe your identification process]</span></p></li>
+<li><h3>Your chosen service</h3><p>With a memorial viewing, your pet is groomed and prepared for a peaceful final goodbye. With aquamation only, your pet is gently cared for and respectfully placed into the aquamation machine.</p><div class="two"><figure><img src="images/viewing.jpg" width="900" height="610" loading="lazy" alt="A puppy resting on a soft bed with flowers and candles"></figure><figure><img src="images/groom.jpg" width="800" height="600" loading="lazy" alt="A puppy being gently groomed"></figure></div></li>
+<li><h3>The aquamation</h3><p>Warm water, gentle heat, and a natural process respectfully return your pet to their natural elements.</p><figure style="max-width:520px"><img src="images/machine.jpg" width="800" height="600" loading="lazy" alt="A puppy resting in the aquamation chamber"></figure></li>
+<li><h3>Return of ashes</h3><p>We carefully prepare the ashes and any other items included in your package, and return them to you.</p><figure style="max-width:520px"><img src="images/package.jpg" width="900" height="610" loading="lazy" alt="Memorial display with photo frame and certificate of aquamation"></figure></li></ol>
+<h2>How it differs from flame cremation</h2>
+<div class="cols"><div class="card"><h3>Aquamation</h3><p>Water and gentle warmth, with no direct fire. Uses less energy and has a lower environmental impact.</p></div><div class="card"><h3>Flame cremation</h3><p>High heat and fire. The most familiar option, and often what families expect.</p></div></div>
+<h2>How long does it take?</h2><p>The process itself takes <span class="ph">[X hours]</span>. Most families receive remains within <span class="ph">[X–Y days]</span>.</p>
+<h2>Questions</h2><div class="faqmini"></div>
+<div class="row cta"></div>
+</section>
+
+<section class="page" id="memorials">
+<div class="pagehead"><h1>Pet memorials &amp; keepsakes</h1><p>There is no right way to remember. Choose what feels like them. Everything here is optional.</p></div>
+<div class="cols">
+<figure><img src="images/package.jpg" width="900" height="610" loading="lazy" alt="Photo frame with paw print, certificate of aquamation, pouch and keepsake jars"></figure><div class="imgph">[Photo: paw print]</div><div class="imgph">[Photo: fur keepsake]</div><div class="imgph">[Photo: jewelry]</div><div class="imgph">[Photo: photo memorial]</div><div class="imgph">[Photo: personalized item]</div></div>
+<div class="cols"><div class="card"><h3>Urns</h3><p><span class="ph">[Materials, sizes, engraving]</span></p></div><div class="card"><h3>Paw prints</h3><p><span class="ph">[Clay, ink, etc.]</span></p></div><div class="card"><h3>Fur clippings</h3><p><span class="ph">[Describe]</span></p></div><div class="card"><h3>Memorial jewelry</h3><p><span class="ph">[Describe]</span></p></div><div class="card"><h3>Photo memorials</h3><p><span class="ph">[Describe]</span></p></div><div class="card"><h3>Other tributes</h3><p><span class="ph">[Garden stones, plantable items, etc.]</span></p></div></div>
+<div class="row cta"></div>
+</section>
+
+<section class="page" id="pricing">
+<div class="pagehead"><h1>Pricing</h1><p>Clear prices, so there are no surprises at a hard time.</p></div>
+<p class="note"><strong>Owner:</strong> replace every highlighted placeholder with your real price. Nothing here is a real price.</p>
+<h2>Service packages</h2>
+<div class="scroll"><table><thead><tr><th>Package</th><th>What's included</th><th>Price</th></tr></thead><tbody>
+<tr><td>Aquamation with Memorial Viewing</td><td>Grooming and preparation for a peaceful viewing and final goodbye, then aquamation. <span class="ph">[List inclusions]</span></td><td><span class="ph">[Price]</span></td></tr>
+<tr><td>Aquamation Only</td><td>Gentle care and aquamation. <span class="ph">[List inclusions]</span></td><td><span class="ph">[Price]</span></td></tr>
+<tr><td><span class="ph">[Package name]</span></td><td><span class="ph">[Inclusions]</span></td><td><span class="ph">[Price]</span></td></tr></tbody></table></div>
+<h2>Optional memorial products</h2>
+<div class="scroll"><table><thead><tr><th>Item</th><th>Price</th></tr></thead><tbody>
+<tr><td>Urn</td><td><span class="ph">[Price range]</span></td></tr><tr><td>Paw print</td><td><span class="ph">[Price]</span></td></tr><tr><td>Fur keepsake</td><td><span class="ph">[Price]</span></td></tr><tr><td>Memorial jewelry</td><td><span class="ph">[Price]</span></td></tr></tbody></table></div>
+<h2>Pickup &amp; transportation</h2><p><span class="ph">[Pickup fees by area or distance, after-hours fee if any]</span></p>
+<h2>Payment</h2><p>You can finalize your package and complete payment or any required deposit at drop-off or pick-up. <span class="ph">[Accepted payment methods and deposit amount]</span></p>
+<div class="row cta"></div>
+</section>
+
+<section class="page" id="guide">
+<div class="pagehead"><h1>When a pet dies</h1><p>You are not alone, and there is no need to rush. Here is what you can do, one step at a time.</p></div>
+<h2>Right now</h2><p>Take a breath. Give yourself and your family a moment. If your pet passed at home, you can stay with them as long as you need.</p>
+<h2>Keeping your pet safe until arrangements are made</h2><p>Gently lay your pet on a towel or blanket in a cool place, away from heat. If you need to wait more than a few hours, ask us or your vet what is best. <span class="ph">[Add your own guidance]</span></p>
+<h2>Contacting us</h2><p>Call or text any time. <span class="ph">[After-hours details]</span> We will ask a few simple questions and explain what comes next.</p>
+<h2>When your pet arrives</h2><p>They are carefully checked in and identified so they stay with you throughout. <span class="ph">[Your process]</span></p>
+<h2>The aquamation and return of remains</h2><p>Your pet is cared for through a gentle, water-based process, and their remains are returned to you in your chosen urn. <a href="#aquamation">Read the full steps</a>.</p>
+<h2>Memorial options</h2><p>Paw prints, fur keepsakes, urns and more are available whenever you are ready. <a href="#memorials">See options</a>.</p>
+<h2>Your questions</h2><div class="faqmini"></div>
+<p class="note">Grief for a pet is real. <span class="ph">[Add a pet-loss support line or counselor link]</span></p>
+<div class="row cta"></div>
+</section>
+
+<section class="page" id="about">
+<div class="pagehead"><h1>About us</h1><p>Why we care for pets this way.</p></div>
+<h2>Our story</h2><p><span class="ph">[Why you started, business history, what drives you]</span></p>
+<div class="cols"><div class="imgph">[Photo: owner]</div><div class="imgph">[Photo: team]</div><div class="imgph">[Photo: facility]</div></div>
+<h2>Who we are</h2><div class="cols"><div class="card"><h3><span class="ph">[Owner name]</span></h3><p><span class="ph">[Bio]</span></p></div><div class="card"><h3><span class="ph">[Staff name]</span></h3><p><span class="ph">[Role]</span></p></div></div>
+<h2>Our values</h2><p><span class="ph">[Your values, in your own words]</span></p>
+<h2>Credentials</h2><p><span class="ph">[Licenses, memberships, certifications. Add only what is true and verifiable]</span></p>
+<div class="row cta"></div>
+</section>
+
+<section class="page" id="tributes">
+<div class="pagehead"><h1>In loving memory</h1><p>A place to remember the pets who made our lives better. Families can share a photo and a few words.</p></div>
+<div class="cols" id="tg"></div>
+<p class="note"><strong>Owner:</strong> add a tribute only with the family's written permission. <span class="ph">[Add a submission form or email for families]</span></p>
+<div class="row"><a class="btn" href="#contact">Share a tribute</a></div>
+</section>
+
+<section class="page" id="faq">
+<div class="pagehead"><h1>Frequently asked questions</h1><p>Short, honest answers. If yours is missing, just ask us.</p></div>
+<div class="faqall"></div><div class="row cta"></div>
+</section>
+
+<section class="page" id="contact">
+<div class="pagehead"><h1>Contact us</h1><p>Call, text or write. We answer gently, and there is no pressure.</p></div>
+<div class="row"><a class="btn big" href="tel:+639124410065">Arrange care for my pet</a></div>
+<div class="split"><div class="card"><h2 style="margin-top:0;font-size:1.5rem">Send a message</h2>
+<form id="f"><label>Your name<input name="n" required autocomplete="name"></label><label>Phone or email<input name="c" required></label><label>Pet's name and type<input name="p"></label><label>How can we help?<select name="s"><option>Aquamation</option><option>Pickup</option><option>Keepsakes</option><option>A question</option></select></label><label>Message<textarea name="m"></textarea></label><button class="btn" type="submit">Send message</button></form></div>
+<div><h2 style="margin-top:0;font-size:1.5rem">Reach us</h2>
+<p><strong>Phone:</strong> <a href="tel:+639124410065">0912 441 0065</a><br><strong>Text:</strong> <a href="sms:+639124410065">0912 441 0065</a><br><strong>Email:</strong> <a href="mailto:pawpassagememorials@gmail.com">pawpassagememorials@gmail.com</a><br><strong>Address:</strong> Unit 9, Mokara Bldg., Sta. Romana St., Abar 1st, San Jose City, Nueva Ecija 3121<br><strong>Hours:</strong> <span class="ph">[Hours]</span><br><strong>Service area:</strong> <span class="ph">[Area]</span></p>
+<p class="note"><strong>After hours / urgent:</strong> <span class="ph">[Your emergency instructions]</span></p>
+<div class="imgph">[Embed your Google Map here]</div>
+<p style="margin-top:1rem"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Unit+9+Mokara+Bldg+Sta+Romana+St+Abar+1st+San+Jose+City+3121" rel="noopener">Get directions</a> <span class="ph">[Add your Google Business Profile link]</span></p></div></div>
+</section>
+
+<section class="page" id="privacy"><div class="pagehead"><h1>Privacy policy</h1></div><p class="note"><span class="ph">[Placeholder. Have your privacy policy written or reviewed by a qualified professional before launch.]</span></p></section>
+<section class="page" id="terms"><div class="pagehead"><h1>Terms &amp; conditions</h1></div><p class="note"><span class="ph">[Placeholder. Have your terms written or reviewed by a qualified professional before launch.]</span></p></section>
+</main>
+
+<footer><div class="fi"><div><strong>Paw Passage Memorial Services</strong><p>Pet aquamation &amp; memorial services in San Jose City, Nueva Ecija.</p></div>
+<div><a href="#faq">FAQ</a><a href="#tributes">In loving memory</a><a href="#privacy">Privacy policy</a><a href="#terms">Terms &amp; conditions</a></div>
+<div><a href="https://www.facebook.com/PawPassageMemorialServicePetAquamation" rel="noopener">Facebook</a><a href="#">Instagram <span class="ph">[link]</span></a><a href="#">Google reviews <span class="ph">[link]</span></a></div></div>
+<p style="text-align:center;margin-top:1.5rem">&copy; <span id="y"></span> Paw Passage Memorial Services</p></footer>
+
+<script>
+const P={home:["Pet Aquamation & Memorial Services","Gentle pet aquamation (water cremation), pet aftercare and memorial keepsakes for dogs and cats in San Jose City, Nueva Ecija. Call or text us any time."],
+aquamation:["Pet Aquamation: Water Cremation for Dogs & Cats","How pet aquamation works, how it differs from cremation, and what to expect. A gentle cremation alternative explained simply."],
+memorials:["Pet Memorial Services & Keepsakes","Urns, paw prints, fur keepsakes, jewelry and photo memorials to honor your pet."],
+pricing:["Pet Aquamation Pricing","Clear pricing for pet aquamation, pickup and memorial products in San Jose City, Nueva Ecija."],
+guide:["What to Do When a Pet Dies","A gentle guide to what to do after your pet passes away, from the first hours to the return of remains."],
+about:["About Us | Pet Aftercare You Can Trust","Meet the people behind our pet aquamation and memorial services."],
+tributes:["Pet Memorial Tributes","A place to remember beloved pets and the families who loved them."],
+faq:["Pet Aquamation FAQ","Answers about aquamation, cost, timing, pickup, paw prints, urns and more."],
+contact:["Contact Us | Pet Aquamation Near Me","Call, text or message us to arrange pet aquamation and aftercare in San Jose City, Nueva Ecija."],
+privacy:["Privacy Policy",""],terms:["Terms & Conditions",""]};
+const F=[["What is pet aquamation?","A gentle, water-based alternative to flame cremation, also called water cremation."],
+["How is it different from cremation?","Aquamation uses water and gentle warmth instead of fire. Many families choose it for its gentler feel and lower energy use."],
+["How much does it cost?","See our <a href='#pricing'>pricing page</a>. [Add a short note on what affects price]"],
+["How long does it take?","[X hours] for the process. Most families receive remains in [X–Y days]."],
+["Do you offer pickup and transportation?","[Describe your home pickup, areas and fees]"],
+["How do I know I'll get my own pet's remains?","[Describe your identification process, such as tags and tracking]"],
+["What will I receive?","[Describe the remains, container and what's included]"],
+["Can I get a paw print?","[Yes/No, and how to request one]"],
+["Can I choose an urn?","[Describe your urn options]"],
+["Do you work after hours?","[Describe after-hours and emergency arrangements]"],
+["What should I expect?","We explain each step before it happens, and you can ask us anything at any time."]];
+const T=[["[Pet name]","[Years]"],["[Pet name]","[Years]"],["[Pet name]","[Years]"]];
+const $=(s,r=document)=>[...r.querySelectorAll(s)];
+const fq=a=>a.map(x=>`<details><summary>${x[0]}</summary><p>${x[1]}</p></details>`).join('');
+$('.faqprev').forEach(e=>e.innerHTML=fq(F.slice(0,4)));
+$('.faqmini').forEach(e=>e.innerHTML=fq(F.slice(0,6)));
+$('.faqall').forEach(e=>e.innerHTML=fq(F));
+$('.cta').forEach(e=>e.innerHTML='<a class="btn" href="tel:+639124410065">Call us</a><a class="btn alt" href="sms:+639124410065">Text us</a><a class="btn alt" href="#contact">Contact us</a>');
+document.getElementById('tg').innerHTML=T.map(t=>`<div class="card" style="text-align:center"><div class="imgph" style="min-height:150px;margin-bottom:1rem">[Pet photo]</div><svg class="cand" viewBox="0 0 34 52" aria-hidden="true"><rect x="8" y="22" width="18" height="28" rx="3" fill="#d7e8e4" stroke="#2f6f77"/><path d="M17 4c5 6 5 11 0 14-5-3-5-8 0-14z" fill="#e3a857"/></svg><h3><span class="ph">${t[0]}</span></h3><p><span class="ph">${t[1]}</span></p><p><span class="ph">[Short remembrance]</span></p></div>`).join('');
+const nav=document.getElementById('nv');
+[['home','Home'],['aquamation','Aquamation'],['memorials','Memorials'],['pricing','Pricing'],['guide','When a Pet Dies'],['about','About'],['tributes','Tributes'],['faq','FAQ'],['contact','Contact']].forEach(l=>nav.innerHTML+=`<a href="#${l[0]}">${l[1]}</a>`);
+const pages=$('.page');
+function go(){const id=(location.hash||'#home').slice(1),t=P[id]?id:'home';
+pages.forEach(p=>p.classList.toggle('on',p.id===t));
+$('nav a').forEach(a=>a.getAttribute('href')==='#'+t?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+document.title=P[t][0]+' | Paw Passage Memorial Services';
+const m=document.querySelector('meta[name=description]');if(P[t][1])m.content=P[t][1];
+nav.classList.remove('open');scrollTo(0,0)}
+addEventListener('hashchange',go);go();
+document.getElementById('mb').onclick=e=>{const o=nav.classList.toggle('open');e.target.setAttribute('aria-expanded',o)};
+document.getElementById('y').textContent=new Date().getFullYear();
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);
+location.href='mailto:pawpassagememorials@gmail.com?subject='+encodeURIComponent('Website inquiry')+'&body='+encodeURIComponent(`Name: ${d.get('n')}\nContact: ${d.get('c')}\nPet: ${d.get('p')}\nHelp with: ${d.get('s')}\n\n${d.get('m')}`)});
+</script>
+</body>
+</html>
